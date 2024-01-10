@@ -1,0 +1,22 @@
+@mixin display($ai:center, $jc:space-between){
+  display: flex;
+  align-items: $ai;
+  justify-content: $jc;
+}
+@mixin textStyle ($color:#22343D, $fontSize:16px, $fontWeight:400,){
+  color: $color;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  font-style: normal;
+}
+@mixin link($br:4px, $bc:#02897A, $color:#fff, $fs:16px, $fw:700){
+  border-radius: $br;
+  background-color: $bc;
+  color: $color;
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: normal;
+}
+@mixin transition(){
+  transition: all 0.3s ease;
+}
