@@ -876,4 +876,128 @@ template {
   .product__list {
     padding: 0px;
   }
+}
+.management-section {
+  padding: 169px 0 38px;
+}
+
+.management {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.management__content {
+  width: 486px;
+}
+
+.management__span {
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: normal;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.management__title {
+  color: #22343D;
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 101px;
+  line-height: normal;
+}
+
+.management__small-title {
+  color: #22343D;
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+}
+
+.management__small-change {
+  margin-top: 25px;
+}
+
+.management__text {
+  margin-top: 12px;
+  line-height: 26px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .management-section {
+    padding: 109px 0 38px;
+  }
+  .management__img {
+    width: 450px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 914px) {
+  .management-section {
+    padding: 39px 0 38px;
+  }
+}
+@media only screen and (max-width: 874px) {
+  .management {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .management__content {
+    padding: 0 140px 0 40px;
+    text-align: start;
+    width: 100%;
+  }
+  .management__img {
+    margin-bottom: 50px;
+  }
+  .management__title {
+    color: #22343D;
+    font-size: 32px;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 16px;
+  }
+}
+@media only screen and (max-width: 614px) {
+  .management__img {
+    width: 400px;
+    height: 350px;
+  }
+  .management__content {
+    padding: 0 80px 0 30px;
+  }
+}
+@media only screen and (max-width: 532px) {
+  .management__img {
+    width: 350px;
+    height: 300px;
+  }
+  .management__content {
+    padding: 0 40px 0 20px;
+  }
+}
+@media only screen and (max-width: 430px) {
+  .management__img {
+    width: 280px;
+    height: 230px;
+  }
+  .management__content {
+    padding: 0 20px 0 10px;
+  }
+}
+@media only screen and (max-width: 328px) {
+  .management__img {
+    width: 250px;
+    height: 200px;
+  }
+  .management__content {
+    padding: 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */
