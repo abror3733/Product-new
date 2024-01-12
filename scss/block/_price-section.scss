@@ -1,0 +1,166 @@
+.price-section {
+  padding-bottom: 100px;
+}
+
+.price {
+  text-align: center;
+}
+.price__title {
+  @include textStyle($fontSize:34px, $fontWeight:700);
+  line-height: normal;
+  margin-bottom: 8px;
+}
+.price__text {
+  margin-bottom: 50px;
+}
+.price__list {
+  @include display ();
+}
+.price__item {
+  text-align: center;
+  padding: 24px 75px 32px 73px;
+  width: 322.649px;
+  border-radius: 8px;
+  background: #FFF;
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.25);
+  transition: all 0.4s;
+}
+.price__item:hover{
+  background: #02897A;
+}
+
+
+.price__item-title {
+  display: inline-block;
+  @include textStyle($fontSize:24px, $fontWeight:700,);
+  line-height: 40px;
+  margin-bottom: 8px;
+  transition: all 0.4s;
+}
+.price__item:hover .price__item-title {
+  @include textStyle($color:#fff, $fontSize:24px, $fontWeight:700,);
+}
+
+.price__item-text {
+  @include textStyle();
+  line-height: 40px;
+  margin-bottom: 16px;
+ transition: all 0.4s;
+}
+.price__item:hover .price__item-text {
+  @include textStyle($color:#fff);
+}
+.price__item-numbers {
+  width: 154px;
+  @include display ();
+  margin-bottom: 40px;
+}
+.price__zero {
+  @include textStyle($color:#02897A, $fontSize:76px, $fontWeight:700);
+  line-height: 100px; 
+  letter-spacing: 0.2px;
+  transition: all 0.4s;
+}
+.price__item:hover .price__zero{
+  @include textStyle($color:#fff, $fontSize:76px, $fontWeight:700);
+}
+.price__dollar {
+  text-align: start;
+  display: block;
+  @include textStyle($color:#02897A, $fontSize:24px, $fontWeight:700);
+  color: #02897A;
+  line-height: 30px;
+  letter-spacing: 0.1px;
+  transition: all 0.4s;
+}
+.price__item:hover .price__dollar{
+  @include textStyle($color:#fff, $fontSize:24px, $fontWeight:700);
+}
+.price__month {
+  @include textStyle($color:#AFAFAF,);
+  line-height: 19px;
+  letter-spacing: 0.1px;
+}
+.price__strong + .price__strong{
+  margin-top: 16px;
+}
+.price__strong {
+  display: inline-block;
+  @include textStyle();
+  line-height: 22px;
+  letter-spacing: 0.2px;
+  transition: all 0.4s;
+}
+.price__item:hover .price__strong{
+  @include textStyle($color:#fff);
+}
+.price__link {
+  padding: 11px 19px 11px 18px;
+  margin-top: 38px;
+  display: block;
+ @include link ();
+ transition: all 0.4s;
+
+ &:hover{
+  box-shadow: rgba(0, 7, 12, 0.9) 0px 1px 2px 0px, rgba(1, 14, 27, 0.952) 0px 2px 6px 2px;
+ }
+}
+.price__item:hover .price__link{
+  @include link ($color:#02897A);
+  background-color: #fff;
+}
+
+// Tablet stytle start
+@media (max-width:1035px){
+  .price__item {
+    width: 30%;
+  }
+}
+@media (max-width:945px){
+  .price__item {
+    width: 275px;
+  }
+}
+@media (max-width:881px){
+  .price__item {
+    width: 32%;
+  }
+  .price__link {
+    padding: 11px 0px 11px 0px;
+   @include link ();
+  }
+}
+@media (max-width:831px){
+  .price__list{
+    flex-direction: column;
+  }
+  .price__item + .price__item{
+    margin-top: 42px;
+  }
+  .price__item {
+    padding: 24px 75px 32px 73px;
+    width: 80%;
+  }
+  .price__item-numbers{
+    margin: 0 auto;
+  }
+  .price__link {
+    width: 139px;
+    margin: 15px auto 0;
+    padding: 11px 0px 11px 0px;
+   @include link ();
+  }
+}
+@media (max-width:475px){
+  .price__item {
+    padding: 24px 25px 32px 23px;
+    width: 80%;
+  }
+}
+@media (max-width:333px){
+  .price__item {
+    padding: 24px 5px 32px 5px;
+    width: 80%;
+  }
+}
+// Tablet stytle end

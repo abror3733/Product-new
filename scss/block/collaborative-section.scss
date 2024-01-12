@@ -1,0 +1,117 @@
+.collaborative-section{
+  padding: 109px 0 138px
+}
+.collaborative {
+  @include display();
+}
+.collaborative__content {
+  width: 486px;
+}
+.collaborative__span {
+  @include textStyle($fontWeight:600);
+  line-height: normal;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.collaborative__title {
+  @include textStyle($fontSize:32px, $fontWeight:700);
+  margin-bottom: 32px;
+  line-height: normal;
+}
+.collaborative__text {
+  @include textStyle();
+  line-height: 26px;
+}
+.collaborative__small-title {
+  @include textStyle($fontWeight:600);
+  display: inline-block;
+  margin: 25px 0 12px;
+}
+
+
+
+// Tablet style start 
+@media only screen and (max-width:1000px){
+  .collaborative-section{
+    padding: 89px 0 98px
+  }
+  .collaborative__img{
+    width: 450px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width:914px){
+  .collaborative-section{
+    padding: 39px 0 98px
+  }
+}
+@media only screen and (max-width:874px){
+  .collaborative{
+    @include display();
+    flex-direction: column-reverse;
+  }
+  .collaborative__content{
+    padding: 0  50px;
+    text-align: center;
+    width: 85%;
+  }
+  .collaborative__img{
+  margin-bottom: 50px;
+  }
+  .collaborative__title{
+    @include textStyle($fontSize:32px, $fontWeight:700);
+   margin-bottom: 16px;
+  }
+  // .management__content{
+  //   padding: 0  30px;
+  //   text-align: center;
+  //   width: 100%;
+  // }
+}
+@media only screen and (max-width:690px){
+  .collaborative__content{
+    padding: 0  40px;
+    width: 95%;
+  }
+}
+@media only screen and (max-width:614px){
+  .collaborative__img{
+   width: 400px;
+   height: 350px;
+  }
+
+}
+// Tablet style end
+// Mobile style start
+@media only screen and (max-width:532px){
+  .collaborative__img{
+    width: 350px;
+    height: 300px;
+   }
+   .collaborative__content{
+    padding: 0 10px;
+  }
+ 
+}
+@media only screen and (max-width:430px){
+  .collaborative__img{
+    width: 280px;
+    height: 230px;
+   }
+   .collaborative__content{
+    padding: 0px;
+  }
+ 
+}
+@media only screen and (max-width:328px){
+  .collaborative__img{
+    width: 250px;
+    height: 200px;
+   }
+   .collaborative__content{
+    padding: 0 ;
+    text-align: center;
+  }
+}
+
+// Mobile style end

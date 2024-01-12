@@ -15,7 +15,7 @@
 }
 .management__title{
   @include textStyle($fontSize:32px, $fontWeight:700);
-  margin-bottom: 101px;
+  margin-bottom: 32px;
   line-height: normal;
 }
 .management__small-title{
@@ -50,9 +50,9 @@
     flex-direction: column-reverse;
   }
   .management__content{
-    padding: 0 140px 0 40px;
-    text-align: start;
-    width: 100%;
+    padding: 0  50px;
+    text-align: center;
+    width: 85%;
   }
   .management__img{
   margin-bottom: 50px;
@@ -61,15 +61,24 @@
     @include textStyle($fontSize:32px, $fontWeight:700);
    margin-bottom: 16px;
   }
+  // .management__content{
+  //   padding: 0  30px;
+  //   text-align: center;
+  //   width: 100%;
+  // }
+}
+@media only screen and (max-width:690px){
+  .management__content{
+    padding: 0  40px;
+    width: 95%;
+  }
 }
 @media only screen and (max-width:614px){
   .management__img{
    width: 400px;
    height: 350px;
   }
-  .management__content{
-    padding: 0 80px 0 30px;
-  }
+
 }
 // Tablet style end
 // Mobile style start
@@ -79,8 +88,9 @@
     height: 300px;
    }
    .management__content{
-    padding: 0 40px 0 20px;
+    padding: 0 10px;
   }
+ 
 }
 @media only screen and (max-width:430px){
   .management__img{
@@ -88,8 +98,9 @@
     height: 230px;
    }
    .management__content{
-    padding: 0 20px 0 10px;
+    padding: 0px;
   }
+ 
 }
 @media only screen and (max-width:328px){
   .management__img{

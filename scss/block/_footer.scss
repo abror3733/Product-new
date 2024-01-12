@@ -1,0 +1,135 @@
+.site-footer {
+  padding-bottom: 26px
+}
+.footer {
+  @include display($ai:start);
+}
+
+.footer__logo-link{
+  display: inline-block;
+}
+.footer__logo-img{
+margin-bottom: 24px;
+}
+.footer__logo-icon-link + .footer__logo-icon-link{
+margin-left: 16px;
+}
+.footer__icon{
+  border-radius: 50%;
+  @include transition();
+}
+.footer__icon:hover{
+  cursor: pointer;
+  box-shadow: rgba(0, 7, 12, 0.9) 0px 1px 2px 0px, rgba(1, 14, 27, 0.952) 0px 2px 6px 2px;
+}
+.list__resource-title {
+  display: inline-block;
+  margin-bottom: 8px;
+ @include textStyle($fontSize:20px, $fontWeight:700);
+  line-height: 30px;
+}
+.list__resource-link {
+  @include textStyle();
+  line-height: 35px;
+  @include transition ();
+
+  &:hover{
+    @include textStyle($color:#02897A);
+    text-shadow: 2px 4px 4px rgba(22, 155, 62, 0.8);
+  }
+}
+
+.list__legal-title{
+  display: inline-block;
+  margin-bottom: 8px;
+ @include textStyle($fontSize:20px, $fontWeight:700);
+  line-height: 30px;
+}
+
+.list__legal-link {
+  @include textStyle();
+  line-height: 35px;
+  @include transition ();
+
+  &:hover{
+    @include textStyle($color:#02897A);
+    text-shadow: 2px 4px 4px rgba(22, 155, 62, 0.8);
+  }
+}
+.footer__form {
+  width: 325px;
+}
+.footer__form-text {
+  @include textStyle($fontSize:20px, $fontWeight:700);
+  line-height: 30px;
+  display: inline-block;
+  margin-bottom: 34px;
+}
+.footer__input {
+  width: 100%;
+  padding: 10px 128px  10px 15px;
+  border-radius: 4px;
+  border: 1px solid #BCD0E5;
+  background: #FFF;
+  display: block;
+  outline: none;
+  @include transition();
+
+  &:hover{
+    box-shadow: rgba(0, 7, 12, 0.9) 0px 1px 2px 0px, rgba(1, 14, 27, 0.952) 0px 2px 6px 2px;
+  }
+}
+.footer__btn {
+  @include link();
+  border: none;
+  margin-top: 21px;
+  padding: 8px 15px 7px 15px;
+  @include transition();
+
+  &:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 7, 12, 0.9) 0px 1px 2px 0px, rgba(1, 14, 27, 0.952) 0px 2px 6px 2px;
+  }
+}
+.footer__bottom-span{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 16px;
+}
+// Tablet style start 
+@media (max-width:863px){
+  .footer{
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .footer__logo-wrap{
+    text-align: center;
+    width: 100%;
+  }
+  .footer__logo-icon-link + .footer__logo-icon-link{
+    margin-left: 36px;
+    }
+    .list__legal{
+      width: 100%;
+    }
+    .list__resource{
+      margin-top: 20px;
+      width: 100%;
+    }
+    .footer__form{
+      width: 100%;
+    }
+    .footer__input {
+      margin: 0 auto;
+      width: 90%;
+      @include transition();
+    
+    }
+    .footer__btn{
+      margin-bottom: 35px;
+    }
+}
+// Tablet style end
